@@ -1,8 +1,8 @@
 from Veiculo import Veiculo
 
 class Automovel(Veiculo):
-    def __init__(self,  marca, qtdRodas, modelo, velocidade, potenciaDoMotor):
-        super().__init__(marca, qtdRodas, modelo, velocidade)
+    def __init__(self,  marca, qtdRodas, modelo, potenciaDoMotor):
+        super().__init__(marca, qtdRodas, modelo)
         self.potenciaDoMotor = potenciaDoMotor
 
     def imprimir_informacoes(self):
