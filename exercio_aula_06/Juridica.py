@@ -18,8 +18,12 @@ class Juridica(Pessoa):
     def getInscricaoEstadual(self):
         return self.__inscricaoEstadual
     
-    def imprimeCNPJ():
-        pass
+    def imprimeCNPJ(self):
+        print("CNPJ: ", self.__cnpj)
     
-    def emitirNotaFiscal():
-        pass
+    def emitirNotaFiscal(self):
+        print("Nome: ", self.nome)
+        print("CNPJ: ", self.__cnpj)
+        print("Inscrição Estadual: ", self.__inscricaoEstadual)
+        print("Endereço: ", self._endereco)
+        print("Telefone: ", self.telefone)
