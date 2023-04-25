@@ -6,12 +6,6 @@ class Pessoa:
         self._endereco = endereco
         self.__telefone = telefone
     
-    #def getCodigo(self):
-        #return self.__codigo
-    
-    #def getTelefone(self):
-        #return self.__telefone
-
     @property
     def codigo(self):
         return self.__codigo
@@ -19,6 +13,14 @@ class Pessoa:
     @property
     def telefone(self):
         return self.__telefone
+    
+    @property
+    def endereco(self):
+        return self._endereco
+    
+    @endereco.setter
+    def endereco(self):
+        return self._endereco
     
     @telefone.setter
     def telefone(self):

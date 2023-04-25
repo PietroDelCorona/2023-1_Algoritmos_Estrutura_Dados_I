@@ -15,6 +15,14 @@ class Juridica(Pessoa):
     def inscricaoEstadual(self):
         return self.__inscricaoEstadual
     
+    @cnpj.setter
+    def cnpj(self):
+        return self.__cnpj
+    
+    @inscricaoEstadual.setter
+    def inscricaoEstadual(self):
+        return self.__inscricaoEstadual
+    
     def getInscricaoEstadual(self):
         return self.__inscricaoEstadual
     
