@@ -4,6 +4,7 @@ class Notebook(Computador):
     def __init__(self, modelo, cor, preco, tempoDeBateria):
         super().__init__(modelo, cor, preco)
         self.__tempoDeBateria = tempoDeBateria
+        self.computadores= []
 
         
     @property 
@@ -20,5 +21,9 @@ class Notebook(Computador):
         return super().getInformacoes()        
         
 
-    def cadastrar():
-        pass
+    def cadastrar(self, computador):
+        self.computadores.append (computador)
+        total = 0
+        for comput in self.computadores:
+            total += comput.preco
+        return total
