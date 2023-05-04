@@ -14,7 +14,9 @@ class Desktop(Computador):
         return self._potenciaDaFonte
     
     def getInformacoes(self):
+        super().getInformacoes()
         print("Potência da Fonte: ", self._potenciaDaFonte)
-        return super().getInformacoes()
-    
+        
+    def cadastrar():
+        pass
 

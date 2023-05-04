@@ -14,5 +14,5 @@ class Computador(ABC):
         print("Preço: ", self.preco)
 
     @abstractmethod
-    def cadastrar(self):
+    def cadastrar():
         pass

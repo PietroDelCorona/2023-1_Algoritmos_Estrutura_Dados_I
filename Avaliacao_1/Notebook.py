@@ -17,10 +17,10 @@ class Notebook(Computador):
     
     
     def getInformacoes(self):
+        super().getInformacoes() 
         print("Tempo de Bateria: ", self.__tempoDeBateria)
-        return super().getInformacoes()        
-        
-
+               
+    
     def cadastrar(self, computador):
         self.computadores.append (computador)
         total = 0
