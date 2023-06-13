@@ -31,6 +31,8 @@ class Fila:
             self.primeiro = self.primeiro.proximo
             self.tamanho -= 1
         self.imprimir()
+        if aux is not None:
+            aux.proximo = None
         return aux  
 
     

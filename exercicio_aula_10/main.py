@@ -23,6 +23,7 @@ vaga = ap02.vaga
 ap02.vaga = None
 fila.addApartamento(ap02)
 x = fila.removerApartamento()
+#x.proximo = None
 x.vaga = vaga
 
 
