@@ -32,6 +32,23 @@ por extenso de “zero” a “nove”. Peça ao usuário para digitar um númer
 de 0 a 9 e retorne a ele o número por extenso, sem usar estruturas
 condicionais (if e switch).'''
 
+print("------Exercício de Tupla---------")
 
-numeros = "zero","um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"
+numeros_extenso = "zero","um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"
+print(numeros_extenso)
+print("-----------------------")
+
+while True:
+    numero_usuario = int(input("Digite um número de 0 a 9: "))
+
+    try:
+        print("Número por extenso:", numeros_extenso[numero_usuario])
+    except:
+        print("Número inválido. Tente novamente.")
+        break
+        
+
+
+
+
 

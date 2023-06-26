@@ -32,3 +32,24 @@ nota01 e a nota02 de um aluno. Guarde estas informações em um
 dicionário. Após, calcule a nota final deste aluno [(nota01 + nota02) /2]
 e adicione ao dicionário. Ao final, imprima todos os dados do
 dicionário.'''
+
+print("------------------------------------")
+aluno = {}
+
+nome = input("Informe o nome do aluno: ")
+nota01 = float(input("Informe a nota 01 do aluno: "))
+nota02 = float(input("Informe a nota 02 do aluno: "))
+
+aluno["nome"] = nome
+aluno["nota01"] = nota01
+aluno["nota02"] = nota02
+
+nota_final = (nota01 + nota02) / 2
+aluno["nota_final"] = nota_final
+
+print("Dados do aluno:")
+for chave, valor in aluno.items():
+    print(f"{chave}: {valor}")
+print(aluno)
+
+
