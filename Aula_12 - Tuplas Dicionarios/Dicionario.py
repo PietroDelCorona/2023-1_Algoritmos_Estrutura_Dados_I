@@ -40,13 +40,16 @@ nome = input("Informe o nome do aluno: ")
 nota01 = float(input("Informe a nota 01 do aluno: "))
 nota02 = float(input("Informe a nota 02 do aluno: "))
 
-aluno["nome"] = nome
-aluno["nota01"] = nota01
-aluno["nota02"] = nota02
+aluno = {
+    "nome": nome,
+    "nota01": nota01,
+    "nota02": nota02
+}
 
 nota_final = (nota01 + nota02) / 2
-aluno["nota_final"] = nota_final
 
+aluno["nota_final"] = nota_final
+print("------------------------")
 print("Dados do aluno:")
 for chave, valor in aluno.items():
     print(f"{chave}: {valor}")
