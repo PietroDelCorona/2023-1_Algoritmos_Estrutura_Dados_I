@@ -21,7 +21,9 @@ print("--------------")
 a, b, c, d = calcular(10,5)
 print(result)
 print("Soma: " + str(a))
+print("Subtrair: " + str(b))
 print("Multiplicar: " + str(c))
+print("Dividir: " + str(d))
 
 print("--------------")
 
