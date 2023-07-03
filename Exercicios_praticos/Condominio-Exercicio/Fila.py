@@ -1,0 +1,48 @@
+from Apartamento import Apartamento
+
+class Fila:
+    def __init__(self):
+        self.primeiro = None
+        self.ultimo = None
+        self.tamanho = 0
+
+    def addApartamento(self, apto):
+        if self.ultimo == None:
+            self.primeiro = apto
+            self.ultimo = apto
+        else:
+            self.ultimo.proximo = apto
+            self.ultimo = apto
+        if self.primeiro is None:
+            self.primeiro = apto
+        self.tamanho += 1
+        self.imprimir()
+
+    def removerApartamento(self):
+        aux = self.primeiro
+        if self.primeiro == None:
+            print("A fila está vazia")
+        elif self.primeiro.proximo == None:
+            self.primeiro = None
+            self.ultimo = None
+            self.tamanho = 0
+        else:
+            self.primeiro = self.primeiro.proximo
+            self.tamanho -= 1
+        self.imprimir()
+        if aux is not None:
+            aux.proximo = None
+        return aux
+
+    def imprimir(self):
+        texto = ""
+        if self.primeiro == None:
+            texto = "A fila está vazia"
+        else:
+            aux = self.primeiro
+            while(aux):
+                texto += aux.__str__()
+                aux = aux.proximo
+        print("--------------")
+        print(texto)
+        print("Total de elementos: ", str(self.tamanho))
